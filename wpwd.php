@@ -47,7 +47,7 @@ require_once( 'wp_autoupdate.php' );
 function snb_activate_au()
     {
         // set auto-update params
-        $plugin_current_version = '1.0';
+        $plugin_current_version = '3.0';
         $plugin_remote_path     = 'https://github.com/jkullar/wpwd-base/archive/master.zip';
         $plugin_slug            = plugin_basename(__FILE__);
         
