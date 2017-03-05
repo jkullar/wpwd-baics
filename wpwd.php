@@ -2,7 +2,7 @@
 /*
  * Plugin Name: WPWD Base
  * Plugin URI: https://wpwd.io
- * Version: 0.1
+ * Version: 2.0
  * Description: Filter particular scripts and style to load in posts or pages that don't need it.
  * Author: Jass SK
  * Author URI: http://wpwd.io/
