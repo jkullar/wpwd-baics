@@ -1,2 +1,2 @@
-# wpwd-baics
+# wpwd-base
 wpwd plugins
