@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPWD Base
+ * Plugin Name: WPWD Base Master
  * Plugin URI: https://wpwd.io
  * Version: 2.0
  * Description: Filter particular scripts and style to load in posts or pages that don't need it.
