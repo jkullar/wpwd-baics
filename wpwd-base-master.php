@@ -122,15 +122,67 @@ array(
 'slug'         => 'js_composer', // The plugin slug (typically the folder name).
 'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/js_composer.zip', // The plugin source.
 'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+),	
+
+array(
+'name'         => 'paid-mymail', // The plugin name.
+'slug'         => 'paid-mymail', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/paid-mymail.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'req-acf-pro', // The plugin name.
+'slug'         => 'req-acf-pro', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-acf-pro.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'req-profile-builder-pro', // The plugin name.
+'slug'         => 'req-profile-builder-pro', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-profile-builder-pro.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
 ),		
 		
-
-	/*	// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		array(
-			'name'      => 'BuddyPress',
-			'slug'      => 'buddypress',
+			'name'      => 'Admin Columns',
+			'slug'      => 'contact-form-7',
 			'required'  => false,
-		), */
+		),	
+		array(
+			'name'      => 'Contact Form 7',
+			'slug'      => 'codepress-admin-columns',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Contact Form 7 Dynamic Text Extension',
+			'slug'      => 'contact-form-7-dynamic-text-extension',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Max Mega Menu',
+			'slug'      => 'megamenu',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Simple Custom CSS',
+			'slug'      => 'simple-custom-css',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Toolset Types',
+			'slug'      => 'types',
+			'required'  => false,
+		),
+		
+
+		// This is an example of how to include a plugin from the WordPress Plugin Repository.
+		array(
+			'name'      => 'Yoast SEO',
+			'slug'      => 'wordpress-seo',
+			'required'  => false,
+		),
 
 		
 	);
