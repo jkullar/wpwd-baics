@@ -147,12 +147,12 @@ array(
 		
 		array(
 			'name'      => 'Admin Columns',
-			'slug'      => 'contact-form-7',
+			'slug'      => 'codepress-admin-columns',
 			'required'  => false,
 		),	
 		array(
 			'name'      => 'Contact Form 7',
-			'slug'      => 'codepress-admin-columns',
+			'slug'      => 'contact-form-7',
 			'required'  => false,
 		),
 		array(
