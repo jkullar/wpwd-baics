@@ -42,21 +42,6 @@
  * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
  */
 
-require_once( 'wp_autoupdate.php' );
-
-function snb_activate_au()
-    {
-        // set auto-update params
-        $plugin_current_version = '3.0';
-        $plugin_remote_path     = 'https://github.com/jkullar/wpwd-base/archive/master.zip';
-        $plugin_slug            = plugin_basename(__FILE__);
-        
-	    new wp_autoupdate ($plugin_current_version, $plugin_remote_path, $plugin_slug);
-        
-    }
-
-    add_action('init', 'snb_activate_au');
-
 require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'wpwd_register_required_plugins' );
