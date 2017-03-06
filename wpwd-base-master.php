@@ -17,169 +17,164 @@ require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 add_action( 'tgmpa_register', 'wpwd_register_required_plugins_pg' );
 
 function wpwd_register_required_plugins_pg() {
-	/*
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
-	 */
+
 	$plugins = array(
+			array(
+				'name'         => 'dhvc woocommerce page',
+				'slug'         => 'dhvc-woocommerce-page',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/dhvc-woocommerce-page.zip',
+				'required'     => false,
+			),
 
-		// This is an example of how to include a plugin from an arbitrary external source in your theme.
-		array(
-			'name'         => 'dhvc woocommerce page', // The plugin name.
-			'slug'         => 'dhvc-woocommerce-page', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/dhvc-woocommerce-page.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'domain-mapping',
+				'slug'         => 'domain-mapping',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/domain-mapping.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'domain-mapping', // The plugin name.
-			'slug'         => 'domain-mapping', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/domain-mapping.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'gp-premium',
+				'slug'         => 'gp-premium',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/gp-premium.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'gp-premium', // The plugin name.
-			'slug'         => 'gp-premium', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/gp-premium.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'leadin',
+				'slug'         => 'leadin',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/leadin.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'leadin', // The plugin name.
-			'slug'         => 'leadin', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/leadin.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'megamenu-pro',
+				'slug'         => 'megamenu-pro',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/megamenu-pro.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'megamenu-pro', // The plugin name.
-			'slug'         => 'megamenu-pro', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/megamenu-pro.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'mpc-massive',
+				'slug'         => 'mpc-massive',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/mpc-massive.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'mpc-massive', // The plugin name.
-			'slug'         => 'mpc-massive', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/mpc-massive.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
-
-		array(
-			'name'         => 'multisite-enhancements', // The plugin name.
-			'slug'         => 'multisite-enhancements', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/multisite-enhancements.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'multisite-enhancements',
+				'slug'         => 'multisite-enhancements',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/multisite-enhancements.zip',
+				'required'     => false,
+			),
 
 
-		array(
-			'name'         => 'multisite-plugin-manager', // The plugin name.
-			'slug'         => 'multisite-plugin-manager', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/multisite-plugin-manager.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'multisite-plugin-manager',
+				'slug'         => 'multisite-plugin-manager',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/multisite-plugin-manager.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'pro-sites', // The plugin name.
-			'slug'         => 'pro-sites', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pro-sites.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'pro-sites',
+				'slug'         => 'pro-sites',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pro-sites.zip',
+				'required'     => false,
+			),
 
 
-		array(
-			'name'         => 'snapshot', // The plugin name.
-			'slug'         => 'snapshot', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/snapshot.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'snapshot',
+				'slug'         => 'snapshot',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/snapshot.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'ts-visual-composer-extend', // The plugin name.
-			'slug'         => 'ts-visual-composer-extend', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/ts-visual-composer-extend.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'ts-visual-composer-extend',
+				'slug'         => 'ts-visual-composer-extend',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/ts-visual-composer-extend.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'Ultimate_VC_Addons', // The plugin name.
-			'slug'         => 'Ultimate_VC_Addons', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/Ultimate_VC_Addons.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'Ultimate_VC_Addons',
+				'slug'         => 'Ultimate_VC_Addons',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/Ultimate_VC_Addons.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'visualizer', // The plugin name.
-			'slug'         => 'visualizer', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/visualizer.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'visualizer',
+				'slug'         => 'visualizer',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/visualizer.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'js_composer', // The plugin name.
-			'slug'         => 'js_composer', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/js_composer.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-		),	
+			array(
+				'name'         => 'js_composer',
+				'slug'         => 'js_composer',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/js_composer.zip',
+				'required'     => true,
+			),	
 
-		array(
-			'name'         => 'paid-mymail', // The plugin name.
-			'slug'         => 'paid-mymail', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/paid-mymail.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'paid-mymail',
+				'slug'         => 'paid-mymail',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/paid-mymail.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'req-acf-pro', // The plugin name.
-			'slug'         => 'req-acf-pro', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-acf-pro.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
+			array(
+				'name'         => 'req-acf-pro',
+				'slug'         => 'req-acf-pro',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-acf-pro.zip',
+				'required'     => false,
+			),
 
-		array(
-			'name'         => 'req-profile-builder-pro', // The plugin name.
-			'slug'         => 'req-profile-builder-pro', // The plugin slug (typically the folder name).
-			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-profile-builder-pro.zip', // The plugin source.
-			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),		
-		
-		array(
-			'name'      => 'Admin Columns',
-			'slug'      => 'codepress-admin-columns',
-			'required'  => false,
-		),	
-		array(
-			'name'      => 'Contact Form 7',
-			'slug'      => 'contact-form-7',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Contact Form 7 Dynamic Text Extension',
-			'slug'      => 'contact-form-7-dynamic-text-extension',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Max Mega Menu',
-			'slug'      => 'megamenu',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Simple Custom CSS',
-			'slug'      => 'simple-custom-css',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Toolset Types',
-			'slug'      => 'types',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Yoast SEO',
-			'slug'      => 'wordpress-seo',
-			'required'  => false,
-		),
+			array(
+				'name'         => 'req-profile-builder-pro',
+				'slug'         => 'req-profile-builder-pro',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-profile-builder-pro.zip',
+				'required'     => false,
+			),		
+
+			array(
+				'name'      => 'Admin Columns',
+				'slug'      => 'codepress-admin-columns',
+				'required'  => false,
+			),	
+			array(
+				'name'      => 'Contact Form 7',
+				'slug'      => 'contact-form-7',
+				'required'  => false,
+			),
+			array(
+				'name'      => 'Contact Form 7 Dynamic Text Extension',
+				'slug'      => 'contact-form-7-dynamic-text-extension',
+				'required'  => false,
+			),
+			array(
+				'name'      => 'Max Mega Menu',
+				'slug'      => 'megamenu',
+				'required'  => false,
+			),
+			array(
+				'name'      => 'Simple Custom CSS',
+				'slug'      => 'simple-custom-css',
+				'required'  => false,
+			),
+			array(
+				'name'      => 'Toolset Types',
+				'slug'      => 'types',
+				'required'  => false,
+			),
+			array(
+				'name'      => 'Yoast SEO',
+				'slug'      => 'wordpress-seo',
+				'required'  => false,
+			),
 
 		
 	);
