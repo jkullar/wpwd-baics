@@ -117,13 +117,20 @@ array(
 'required'     => false, // If false, the plugin is only 'recommended' instead of required.
 ),
 		
+array(
+'name'         => 'js_composer', // The plugin name.
+'slug'         => 'js_composer', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/js_composer.zip', // The plugin source.
+'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+),		
+		
 
-		// This is an example of how to include a plugin from the WordPress Plugin Repository.
+	/*	// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		array(
 			'name'      => 'BuddyPress',
 			'slug'      => 'buddypress',
 			'required'  => false,
-		),
+		), */
 
 		
 	);
