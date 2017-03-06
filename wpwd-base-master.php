@@ -2,7 +2,7 @@
 /*
  * Plugin Name: WPWD Base Master
  * Plugin URI: https://wpwd.io
- * Version: 17.03.06 
+ * Version: 17.03.06.1 
  * Description: Filter particular scripts and style to load in posts or pages that don't need it.
  * Author: Jass SK
  * Author URI: http://wpwd.io/
