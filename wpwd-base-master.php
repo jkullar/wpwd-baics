@@ -42,6 +42,11 @@
  * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
  */
 
+
+require_once('wp-updates-plugin.php');
+new WPUpdatesPluginUpdater_1584( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
+
+
 require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'wpwd_register_required_plugins' );
