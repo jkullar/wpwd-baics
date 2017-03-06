@@ -2,7 +2,7 @@
 /*
  * Plugin Name: WPWD Base Master
  * Plugin URI: https://wpwd.io
- * Version: 2.1
+ * Version: 17.03.06 
  * Description: Filter particular scripts and style to load in posts or pages that don't need it.
  * Author: Jass SK
  * Author URI: http://wpwd.io/
@@ -12,7 +12,8 @@
 require_once('wp-updates-plugin.php');
 new WPUpdatesPluginUpdater_1584( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
 
-require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
+// source http://tgmpluginactivation.com/installation/
+require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php'; 
 add_action( 'tgmpa_register', 'wpwd_register_required_plugins' );
 
 function wpwd_register_required_plugins() {
@@ -24,13 +25,97 @@ function wpwd_register_required_plugins() {
 
 		// This is an example of how to include a plugin from an arbitrary external source in your theme.
 		array(
-			'name'         => 'TGM New Media Plugin', // The plugin name.
-			'slug'         => 'tgm-new-media-plugin', // The plugin slug (typically the folder name).
-			'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
-			'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-			'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+			'name'         => 'dhvc woocommerce page', // The plugin name.
+			'slug'         => 'dhvc-woocommerce-page', // The plugin slug (typically the folder name).
+			'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/dhvc-woocommerce-page.zip', // The plugin source.
+			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
 		),
 
+array(
+'name'         => 'domain-mapping', // The plugin name.
+'slug'         => 'domain-mapping', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/domain-mapping.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'gp-premium', // The plugin name.
+'slug'         => 'gp-premium', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/gp-premium.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'leadin', // The plugin name.
+'slug'         => 'leadin', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/leadin.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'megamenu-pro', // The plugin name.
+'slug'         => 'megamenu-pro', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/megamenu-pro.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'mpc-massive', // The plugin name.
+'slug'         => 'mpc-massive', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/mpc-massive.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'multisite-enhancements', // The plugin name.
+'slug'         => 'multisite-enhancements', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/multisite-enhancements.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+
+array(
+'name'         => 'multisite-plugin-manager', // The plugin name.
+'slug'         => 'multisite-plugin-manager', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/multisite-plugin-manager.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'pro-sites', // The plugin name.
+'slug'         => 'pro-sites', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pro-sites.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+
+array(
+'name'         => 'snapshot', // The plugin name.
+'slug'         => 'snapshot', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/snapshot.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'ts-visual-composer-extend', // The plugin name.
+'slug'         => 'ts-visual-composer-extend', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/ts-visual-composer-extend.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'Ultimate_VC_Addons', // The plugin name.
+'slug'         => 'Ultimate_VC_Addons', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/Ultimate_VC_Addons.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
+
+array(
+'name'         => 'visualizer', // The plugin name.
+'slug'         => 'visualizer', // The plugin slug (typically the folder name).
+'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/visualizer.zip', // The plugin source.
+'required'     => false, // If false, the plugin is only 'recommended' instead of required.
+),
 		
 
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.
