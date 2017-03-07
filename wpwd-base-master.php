@@ -25,6 +25,14 @@ function wpwd_register_required_plugins_pg() {
 				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/dhvc-woocommerce-page.zip',
 				'required'     => false,
 			),
+			
+			array(
+				'name'         => 'wp remove assets',
+				'slug'         => 'wp-remove-assets',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/wp-remove-assets.zip',
+				'required'     => false,
+			),
+		
 
 			array(
 				'name'         => 'domain-mapping',
