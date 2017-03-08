@@ -146,7 +146,48 @@ function wpwd_register_required_plugins_pg() {
 				'slug'         => 'req-profile-builder-pro',
 				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/req-profile-builder-pro.zip',
 				'required'     => false,
-			),		
+			),	
+			array(
+				'name'         => 'pb-add-on-campaign-monitor',
+				'slug'         => 'pb-add-on-campaign-monitor',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pb-add-on-campaign-monitor.zip',
+				'required'     => false,
+			),
+
+			array(
+				'name'         => 'pb-add-on-custom-profile-menus',
+				'slug'         => 'pb-add-on-custom-profile-menus',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pb-add-on-custom-profile-menus.zip',
+				'required'     => false,
+			),
+
+			array(
+				'name'         => 'pb-add-on-field-visibility',
+				'slug'         => 'pb-add-on-field-visibility',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pb-add-on-field-visibility.zip',
+				'required'     => false,
+			),
+
+			array(
+				'name'         => 'pb-add-on-multi-step-forms',
+				'slug'         => 'pb-add-on-multi-step-forms',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pb-add-on-multi-step-forms.zip',
+				'required'     => false,
+			),
+
+			array(
+				'name'         => 'pb-add-on-social-connect',
+				'slug'         => 'pb-add-on-social-connect',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pb-add-on-social-connect.zip',
+				'required'     => false,
+			),
+
+			array(
+				'name'         => 'pb-add-on-woocommerce',
+				'slug'         => 'pb-add-on-woocommerce',
+				'source'       => 'http://prefr.co/df23sxdDAsSDf334q3422Dfggdsgsd23/pb-add-on-woocommerce.zip',
+				'required'     => false,
+			),
 
 			array(
 				'name'      => 'Admin Columns',
